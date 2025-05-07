@@ -1,0 +1,633 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kefiguer - Final Project</title>
+
+    <!-- Less stylesheet links -->
+
+    <link rel="stylesheet/less" type="text/css" href="./styles/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/x-icon" href="assets/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap links -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    > 
+    </script>
+    <!-- Javascript link. -->
+    <script src="enable.js" defer></script>   
+  </head>
+  <body class="bg">
+
+      <!-- Header with navigation links and title. Navbar using responsive Bootstrap buttons.-->
+
+      <header>
+
+    <nav class="topBar navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kefiguer-jala.github.io/Save-The-Date/">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kefiguer-jala.github.io/Bootstrap-Portfolio/">more</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark search" type="submit" id="look_for">
+                Search
+              </button>
+            </form>
+          </div>
+          <a class="navbar-brand" href="#"
+          ><img
+            src="assets/android-chrome-512x512.png"
+            style="width: 50px; height: 50px;"
+        /></a>
+
+        </div>
+      </nav>
+
+        <h1 class="projectTitle">FINAL PROJECT</h1>
+      </header>
+    
+      <!-- Main content of application. Live poster animation with 4 quadrants as responsive Boostrap modals with CIT career information hidden. -->
+
+    <main class="outerContainer container"> 
+
+      <div class="quadContainer"> 
+
+        <button
+          class="quad1 btn-dark"
+          data-bs-container="body" 
+          data-bs-toggle="modal"
+          data-bs-target="#softwareModal"   
+          title="Software" 
+          > 
+          <h4 class="quadText">SOFTWARE</h4>
+        </button>
+
+        <div 
+        class="modal fade"      
+        id="softwareModal"      
+        tabindex="-1"      
+        aria-labelledby="softwareModalLabel"   
+        aria-hidden="true">       
+          <div class="modal-dialog">          
+            <div class="modal-content">                 
+                <div class="modal-header">                                    
+                      <h5 class="modal-title" id="softwareModalLabel">      
+                        Software
+                      </h5> 
+                      <button type="button"         
+                      class="btn-close"         
+                      data-bs-dismiss="modal"         
+                      aria-label="Close"> 
+                      </button>
+                  </div>                 
+                  <div class="modal-body">                  
+                    <p> 
+                      The software sector of CIT focuses on the design, 
+                      development, deployment, and maintenance of 
+                      software applications and systmes. The CIT offers
+                      its Computer and Information Technology degree 
+                      for the software sector.
+                    </p> 
+                  </div>                 
+                  <div class="modal-footer">                                    
+                      <button 
+                          type="button"   
+                          class="btn btn-secondary"   
+                          data-bs-dismiss="modal">   
+                          Close 
+                      </button>
+                  </div>               
+                </div>             
+              </div>           
+          </div>
+
+        
+
+            <button
+            class="quad2 btn-dark"
+            data-bs-container="body" 
+            data-bs-toggle="modal"
+            data-bs-target="#networkingModal"   
+            title="Networking" 
+            > 
+            <h4 class="quadText">NETWORKING</h4>
+            </button>
+
+            <div 
+            class="modal fade"      
+            id="networkingModal"      
+            tabindex="-1"      
+            aria-labelledby="networkingModalLabel"   
+            aria-hidden="true">       
+            <div class="modal-dialog">          
+                <div class="modal-content">                 
+                    <div class="modal-header">                                    
+                        <h5 class="modal-title" id="networkingModalLabel">      
+                            Networking
+                        </h5> 
+                        <button type="button"         
+                        class="btn-close"         
+                        data-bs-dismiss="modal"         
+                        aria-label="Close"> 
+                    </button>
+                    </div>                 
+                    <div class="modal-body">                  
+                        <p> 
+                          The networking sector of the CIT deals with the 
+                          design, implementation, and management of 
+                          computer networks that enable communication 
+                          between devices. The CIT offers the Computing 
+                          Infrastructure and Network Engineering Technology 
+                          major as part of its degree program.
+                        </p> 
+                    </div>                 
+                    <div class="modal-footer">                                    
+                        <button 
+                            type="button"   
+                            class="btn btn-secondary"   
+                            data-bs-dismiss="modal">   
+                            Close 
+                        </button>
+                    </div>               
+                </div>             
+            </div>           
+        </div>
+
+      </div>
+
+      <!-- Seperate containers for bottom half of quadrants -->
+
+      <div class="quadContainer"> 
+
+        <button
+          class="quad3 btn-dark"
+          data-bs-container="body" 
+          data-bs-toggle="modal"
+          data-bs-target="#dmModal"   
+          title="Data Management" 
+          > 
+          <h4 class="quadText">DATA MANAGEMENT</h4>
+        </button>
+
+        <div 
+        class="modal fade"      
+        id="dmModal"      
+        tabindex="-1"      
+        aria-labelledby="dmModalLabel"   
+        aria-hidden="true">       
+          <div class="modal-dialog">          
+            <div class="modal-content">                 
+                <div class="modal-header">                                    
+                      <h5 class="modal-title" id="sdmModalLabel">      
+                        Data Management
+                      </h5> 
+                      <button type="button"         
+                      class="btn-close"         
+                      data-bs-dismiss="modal"         
+                      aria-label="Close"> 
+                      </button>
+                  </div>                 
+                  <div class="modal-body">                  
+                    <p> 
+                      The data management side of CIT involves collecting, 
+                      storing, organizing, and securing data so it can be 
+                      easily accessed, analyzed, and used. The CIT degree 
+                      program offers its Data Analytics, Technologies and 
+                      Applications major for the data management field.
+                    </p> 
+                  </div>                 
+                  <div class="modal-footer">                                    
+                      <button 
+                          type="button"   
+                          class="btn btn-secondary"   
+                          data-bs-dismiss="modal">   
+                          Close 
+                      </button>
+                  </div>               
+                </div>             
+              </div>           
+          </div>
+
+        
+
+            <button
+            class="quad4 btn-dark"
+            data-bs-container="body" 
+            data-bs-toggle="modal"
+            data-bs-target="#CSModal"   
+            title="Cybersecurity" 
+            > 
+            <h4 class="quadText">CYBERSECURITY</h4>
+          </button>
+
+            <div 
+            class="modal fade"      
+            id="CSModal"      
+            tabindex="-1"      
+            aria-labelledby="CSModalLabel"   
+            aria-hidden="true">       
+            <div class="modal-dialog">          
+                <div class="modal-content">                 
+                    <div class="modal-header">                                    
+                        <h5 class="modal-title" id="CSModalLabel">      
+                          Cybersecurity
+                        </h5> 
+                        <button type="button"         
+                        class="btn-close"         
+                        data-bs-dismiss="modal"         
+                        aria-label="Close"> 
+                    </button>
+                    </div>                 
+                    <div class="modal-body">                  
+                        <p> 
+                          The cybersecurity field of information technology 
+                          on protecting digital systems, networks, and data 
+                          from unauthorized access, attacks, and damage. The 
+                          CIT offers its Cybersecurity major as part of its 
+                          degree plan for the cybersecurity field.
+                        </p> 
+                    </div>                 
+                    <div class="modal-footer">                                    
+                        <button 
+                            type="button"   
+                            class="btn btn-secondary"   
+                            data-bs-dismiss="modal">   
+                            Close 
+                        </button>
+                    </div>               
+                </div>             
+            </div>           
+        </div>
+
+      <!-- Poster text with circular logo  -->
+
+      </div>
+      <h2>APPLIED COMPUTING</h2>
+
+      <div class="quadContainer">
+        <div class="circular"></div>
+      </div>
+    </main>
+
+        <!-- Responsive Bootstrap accordion for job roles related to CIT fields. -->
+
+    <aside class="accordion-area container">  
+
+        <div class="accordion" id="accordionCategories" >  
+
+            <div class="accordion-item" >
+                <h2 class="accordion-header" id="headingOne">                 
+                    <button                   
+                    class="accordion-button"                   
+                    type="button"                   
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"                   
+                    aria-expanded="true"                   
+                    aria-controls="collapseOne"
+                    >                   
+                    Software Developer                 
+                </button>               
+            </h2>               
+                <div                 
+                id="collapseOne"                 
+                class="accordion-collapse collapse show"                 
+                aria-labelledby="Software Developer"                 
+                data-bs-parent="#accordionRecipes">                 
+                    <div class="accordion-body">                   
+                        A software developer creates computer programs 
+                        and applications that help users perform tasks 
+                        or solve problems. Major suggested: Computer Information Technology.
+                    </div>               
+                </div>             
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">                 
+                    <button                   
+                    class="accordion-button collapsed"                   
+                    type="button"                   
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"                   
+                    aria-expanded="false"                   
+                    aria-controls="collapseTwo">                   
+                    Security Analyst                 
+                </button>               
+            </h2>               
+                <div                 
+                id="collapseTwo"                 
+                class="accordion-collapse collapse"                 
+                aria-labelledby="Security Analyst"                 
+                data-bs-parent="#accordionRecipes">                 
+                    <div class="accordion-body">     
+                        A security analyst protects computer systems and 
+                        networks from cyber threats like hackers, 
+                        viruses, or data breaches. Major suggested: 
+                        Cybersecurity.
+                    </div>               
+                </div>             
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">                 
+                    <button                   
+                    class="accordion-button collapsed"                   
+                    type="button"                   
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"                   
+                    aria-expanded="false"                   
+                    aria-controls="collapseThree">                   
+                    Data Analyst                 
+                </button>               
+            </h2>               
+                <div                 
+                id="collapseThree"                 
+                class="accordion-collapse collapse"                 
+                aria-labelledby="Data Analyst"                 
+                data-bs-parent="#accordionRecipes">                 
+                    <div class="accordion-body">   
+                        A data analyst focuses on organizing, managing, 
+                        and maintaining data stored in databases. Major 
+                        suggested: Data Analytics, Technologies and 
+                        Applications.          
+                    </div>               
+                </div>             
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">                 
+                    <button                   
+                    class="accordion-button collapsed"                   
+                    type="button"                   
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"                   
+                    aria-expanded="false"                   
+                    aria-controls="collapseFour">                   
+                    Network Architect                 
+                </button>               
+            </h2>               
+                <div                 
+                id="collapseFour"                 
+                class="accordion-collapse collapse"                 
+                aria-labelledby="Network Architect"                 
+                data-bs-parent="#accordionRecipes">                 
+                    <div class="accordion-body">     
+                        A network architect designs and plans the structure 
+                        of an organization's computer network. Major 
+                        suggested: Computing Infrastructure and Network Engineering Technology.
+                    </div>               
+                </div>             
+            </div>
+
+        </div>
+        
+      </aside>
+
+      <aside class="container">
+        <button 
+        class="btn btn-md btn-warning d-block m-4"
+        id="details"
+        data-bs-container="body" 
+        data-bs-toggle="popover" 
+        data-bs-placement="right"
+        title="CIT" 
+        data-bs-content="The Department of Computer and Information Technology (CIT) 
+        at Purdue University is dedicated to providing educational 
+        opportunities, conducting innovative research, and building 
+        connections both within the university and beyond. The 
+        faculty and staff work collaboratively to tackle global 
+        challenges by implementing solutions at the local level."
+        > 
+        <span> <i class="bi"></i></span> 
+        <span>CIT</span> 
+    </button>
+
+      </aside>
+
+      <!-- 10 question quiz made with responsive bootstrap buttons and JS -->
+
+    <aside class="container quiz">
+      <h3>Quiz</h3>
+      <p>1. What does HTML stand for?</p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+        
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> Hyperlinks and Text Markup Language
+
+          </label>
+
+          <label class="btn btn-secondary m-2">
+
+          <input type="radio" name="answer" id="correct" autocomplete="off"> Hyper Text Markup Language
+
+          </label>
+
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> Home Tool Markup Language
+
+          </label>
+
+      </div>
+
+      <button class=" btn btn-warning m-4" id="question1">Check</button>
+
+      <p id="output1"></p>
+      
+      <p>2. Who is making the Web standards?</p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> Mozilla
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> Google
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> The World Wide Web Consortium
+          </label>
+      </div>
+      <button class=" btn btn-warning m-4" id="question2">Check</button>
+      <p id="output2"></p>
+      
+      <p>3. Choose the correct HTML element for the largest heading:</p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> &lt;h1&gt;
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;head&gt;
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;h6&gt;
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question3">Check</button>
+      <p id="output3"></p>
+      
+      <p>4. What is the correct HTML element for inserting a line break?  </p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;break&gt;
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> &lt;br&gt;
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;lb&gt;
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question4">Check</button>
+      <p id="output4"></p>
+      
+      <p>5. Choose the correct HTML element to define important text</p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> &lt;important&gt;
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;strong&gt;
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;i&gt;
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question5">Check</button>
+      <p id="output5"></p>
+      
+      <p>6. What does CSS stand for?  </p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> Computer Style Sheets
+          </label>
+          <label class="btn btn-secondary m-2">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> Colorful Style Sheets
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> Cascading Style Sheets
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question6">Check</button>
+      <p id="output6"></p>
+      
+      <p>7. What is the correct HTML for referring to an external style sheet?</p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off">  &lt;style src="mystyle.css"&gt;
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off">  &lt;stylesheet&gt;mystyle&lt;/stylesheet&gt;
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="correct" autocomplete="off">  &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question7">Check</button>
+      <p id="output7"></p>
+      
+      <p>8. Where in an HTML document is the correct place to refer to an external style sheet?  </p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> In the &lt;head&gt; section
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> In the &lt;body&gt; section
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> At the end of the document
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question8">Check</button>
+      <p id="output8"></p>
+      
+      <p>9. Which HTML tag is used to define an internal style sheet?  </p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;css&gt;
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> &lt;style&gt;
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> &lt;script&gt;
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question9">Check</button>
+      <p id="output9"></p>
+      
+      <p>10. Which HTML attribute is used to define inline styles?  </p>
+      <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> class
+          </label>
+          <label class="btn btn-secondary  m-2">
+          <input type="radio" name="answer" id="incorrect" autocomplete="off"> styles
+          </label>
+          <label class="btn btn-secondary m-2" style="border-radius: 0%;">
+          <input type="radio" name="answer" id="correct" autocomplete="off"> style
+          </label>
+      </div>
+      <button class="btn btn-warning m-4" id="question10">Check</button>
+      <p id="output10"></p>
+    </aside>
+
+    <!-- Responsive footer with social media links and copyright. -->
+
+    <footer>
+      <div class="footLinks">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">Instagram</a>
+      </div>
+      <div class="copyright">
+          <p>Copyright Figueroa 2025</p>
+      </div>
+  </footer>
+
+</body>
+
+</html>

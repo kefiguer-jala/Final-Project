@@ -1,0 +1,275 @@
+// Less variables for Purdue color and universal sizing
+
+@primaryColor: #cfb991;
+@secondaryColor: #555960;
+@altColor: #ddb945;
+@otherColor: #6f727b;
+@alt2Color: #ebd99f;
+@topSpacing: 2em;
+@sectionWidth: 800px;
+@quadSize: 250px;
+
+// Set font for whole application
+
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+  }
+
+// Styling for live poster
+// Implementing flexbox properties and Less variables.
+
+.outerContainer{
+    background-color: @secondaryColor;
+    max-width: @sectionWidth;
+    margin-top: @topSpacing;
+}
+
+.quadContainer{
+    height: 300px;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.quadContainer > button {
+    height: @quadSize;
+    width: @quadSize;
+    border: 3px solid @primaryColor;
+    background-color: @secondaryColor;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: .25s;
+}
+
+// Adding Purdue glow effect to live poster quadrants
+
+.quadContainer > button:hover{
+    border: 3px solid @primaryColor;
+    box-shadow: inset 0 0 25px 0px @primaryColor;
+
+}
+
+// Adding image to poster quadrants
+
+.quad1{
+    background-image: url(/assets/software.jpg);
+    background-size: cover;
+}
+.quad2{
+    background-image: url(/assets/networking.jpg);
+    background-size: cover;
+}
+.quad3{
+    background-image: url(/assets/datamanagement.jpg);
+    background-size: cover;
+}
+.quad4{
+    background-image: url(/assets/cybersecurity.jpg);
+    background-size: cover;
+}
+
+// Sizing image to fit inside quadrants
+
+img{
+    height: @quadSize;
+    width: @quadSize;
+}
+
+// Moving text inside quadrants
+
+h4{
+    color: black;
+    align-self: flex-end;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+// Styling circular CIT logo
+
+.circular{
+    height: 181px;
+    width: 204px;
+    background-image: url(/assets/circular.png);
+    background-size: contain;
+    border-radius: 50%;
+}
+
+// Using universal size variables on Boostrap accordion to add uniformity
+
+.accordion-area{
+    max-width: @sectionWidth;
+    margin-top: @topSpacing;
+}
+
+.quiz{
+    max-width: @sectionWidth;
+    margin-top: @topSpacing;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+// Adding Purdue color to the backgrouns
+.bg{
+    background-color: @primaryColor;
+}
+
+// Styling navbar and search button to match Purdue color scheme
+
+#look_for{
+    color: @primaryColor;
+    border-color: @primaryColor;
+}
+
+#look_for:hover{
+    background-color: @otherColor;
+}
+
+.topBar{
+    background-color: @secondaryColor;
+}
+
+// Styling quiz buttons
+
+#question1{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question1:hover{
+    background-color: @alt2Color;
+}
+
+#question2{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question2:hover{
+    background-color: @alt2Color;
+}
+#question3{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question3:hover{
+    background-color: @alt2Color;
+}
+#question4{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question4:hover{
+    background-color: @alt2Color;
+}
+#question5{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question5:hover{
+    background-color: @alt2Color;
+}
+#question6{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question6:hover{
+    background-color: @alt2Color;
+}
+#question7{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question7:hover{
+    background-color: @alt2Color;
+}
+#question8{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question8:hover{
+    background-color: @alt2Color;
+}
+#question9{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question9:hover{
+    background-color: @alt2Color;
+}
+#question10{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#question10:hover{
+    background-color: @alt2Color;
+}
+
+// Styling project title
+
+.projectTitle{
+    text-align: center;
+}
+
+// Styling footer
+
+footer {
+    background-color: @secondaryColor;
+    margin-top: auto;
+
+    
+    .footLinks {
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            padding: 20px;
+            color: @primaryColor;
+            text-decoration: none;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding-bottom: 20px;
+        color: @primaryColor;
+    }
+}
+
+// Adding responsiveness for small devices
+
+@media screen and (max-width: 800px) {
+    .quadContainer > button{
+        
+        height: @quadSize * .8;
+        width: @quadSize * .8;
+    
+    }
+    .quadText{
+        font-size: 14px;
+    }
+}
+
+// Popover styling
+
+#details{
+    background-color: @altColor;
+    border-color: black;
+}
+
+#details:hover{
+    background-color: @alt2Color;
+}
